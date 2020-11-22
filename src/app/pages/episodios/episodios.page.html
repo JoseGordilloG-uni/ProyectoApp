@@ -5,5 +5,33 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-item *ngFor = "let item of listepi">
+    <ion-thumbnail slot = "start">
+      <img src = "../../../assets/images/img4.jpg" alt="">
+    </ion-thumbnail>
+    <div>
+      <h3>{{item.name}} </h3>
+    </div>
+    <ion-badge color = "dark" slot = "end">
+      ID: {{item.id}}
+    </ion-badge>
+  </ion-item>
 </ion-content>
+
+<ion-footer>
+<ion-toolbar class="ion-text-center">
+  <ion-buttons slot = "start" *ngIf = "pagina > 1">
+    <ion-button (click) = "buscarepisodios(pagina - 1)">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+
+  Página: {{pagina}}
+
+  <ion-buttons slot = "end" *ngIf = "pagina < 3">
+    <ion-button (click) = "buscarepisodios(pagina + 1)">
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+</ion-footer>
