@@ -1,0 +1,31 @@
+img{
+    display:block;
+    margin:auto;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    }
+
+ion-content.background{
+    --background: url(../../../assets/images/img5.jpg) 0 0/100% 100% no-repeat;
+}
+
+ion-card{
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+div.circle{
+    width: 5px;
+    height: 5px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #5cb85c;
+}
+
+ion-card-title{
+    text-align: center;
+    font-weight: bold;
+}

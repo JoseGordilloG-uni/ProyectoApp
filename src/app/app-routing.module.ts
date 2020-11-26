@@ -17,7 +17,11 @@ const routes: Routes = [
   {
     path: 'lugares',
     loadChildren: () => import('./pages/lugares/lugares.module').then( m => m.LugaresPageModule)
-  }
+  },
+  {
+    path: 'description-personajes/:id',
+    loadChildren: () => import('./pages/description-personajes/description-personajes.module').then( m => m.DescriptionPersonajesPageModule)
+  },
 ];
 @NgModule({
   imports: [

@@ -4,18 +4,24 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-item *ngFor = "let item of listluga">
-    <ion-thumbnail slot = "start">
-      <img src = "../../../assets/images/img3.png" alt="">
-    </ion-thumbnail>
-    <div>
-      <h3>{{item.name}} </h3>
-    </div>
-    <ion-badge color = "dark" slot = "end">
-      ID: {{item.id}}
-    </ion-badge>
-  </ion-item>
+<ion-content padding class="background">
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor = "let item of listluga" col-6 no-padding>
+    <ion-card>
+      <img src="{{../../../../../assets/images/img3.png" alt="">
+      <ion-card-content>
+        <ion-card-title>
+      {{item.name}}
+    </ion-card-title>
+    <span><strong>Type: </strong> {{item.type}}</span><br>
+    <span><strong>Dimension: </strong>{{item.dimension}}</span><br>
+    <span><strong>Created: </strong>{{item.created}}</span><br>
+  </ion-card-content>
+  </ion-card>
+</ion-col>
+</ion-row>
+</ion-grid>
 </ion-content>
 
 <ion-footer>

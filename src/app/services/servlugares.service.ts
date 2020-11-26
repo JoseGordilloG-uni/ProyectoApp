@@ -20,4 +20,8 @@ export class ServlugaresService {
     return this.http.get(`${this.url}?page=${pagina}`);
   }
 
+  buscarId(id: number){
+    return this.http.get(`${this.url}/${id}`);
+  }
+
 }

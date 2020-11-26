@@ -9,3 +9,7 @@ ion-thumbnail{
     border-style: solid;
     border-color: black;
 }
+
+ion-content.background{
+    --background: url(../../../assets/images/img5.jpg) 0 0/100% 100% no-repeat;
+}

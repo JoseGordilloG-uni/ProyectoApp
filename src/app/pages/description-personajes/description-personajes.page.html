@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Dellates</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="personajes"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+  <ion-card>
+    <img src="{{personajes.image}}" alt="">
+<ion-card-content>
+  <ion-card-title>
+    {{personajes.name}}
+  </ion-card-title>
+  <span><strong>Status: </strong> {{personajes.status}}</span><br>
+  <span><strong>Species: </strong>{{personajes.species}}</span><br>
+  <span><strong>Type: </strong>{{personajes.type}}</span><br>
+  <span><strong>Gender: </strong>{{personajes.gender}}</span><br>
+  <span><strong>Origin: </strong>{{origen.name}}</span><br>
+  <span><strong>Location: </strong>{{locacion.name}}</span><br>
+  <span><strong>Created: </strong>{{personajes.created}}</span><br><br>
+</ion-card-content>
+</ion-card>
+</ion-content>

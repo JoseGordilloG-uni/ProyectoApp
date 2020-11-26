@@ -4,9 +4,12 @@ h3 {
 }
 
 ion-thumbnail{
-    width: 70px;
+    width: 100px;
     border-width: 2px;
     border-style: solid;
     border-color: black;
 }
 
+ion-item.background{
+    --background: #D2D4D5;
+}

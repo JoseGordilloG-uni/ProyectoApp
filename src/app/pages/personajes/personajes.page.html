@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-item *ngFor = "let item of listperso">
+  <ion-item *ngFor = "let item of listperso" [routerLink] = "'/description-personajes/' + item.id" class="background">
     <ion-thumbnail slot = "start">
       <img [src] = "item.image" alt="">
     </ion-thumbnail>
